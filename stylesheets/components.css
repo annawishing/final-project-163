@@ -33,3 +33,37 @@ i.icon-product3{
 .head span.icon-logo{
 	background: url(../images/bigicons.png) no-repeat 2px 0;
 }
+
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	clear: both;
+}
+
+.m-content li.active{
+	background: #21a557;
+	color: white;
+}
+
+.tab-panel{
+	float: left;
+	width: 25%;
+}
+.panel{
+	background-color: #fff;
+	box-shadow: 0 1px 2px 2px #ecebeb;
+
+	padding: 15px 0 20px;
+}
+
+.panel-heading{
+	padding: 0 20px 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+.panel-body{
+	padding: 20px 20px 0;
+}
