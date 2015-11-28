@@ -1,0 +1,35 @@
+.container{
+	width: 1205px;
+	margin: auto;
+}
+
+span.icon-close{
+	background: url(../images/smallicons.png) no-repeat;
+	width: 9px;
+	height: 9px;
+	margin-right: 5px;
+}
+
+i.icon-product{
+	display: inline-block;
+	float: left;
+	width: 90px;
+	height: 90px;
+}
+
+
+i.icon-product1{
+	background: url(../images/bigicons.png) no-repeat -95px 5px;
+}
+
+i.icon-product2{
+	background: url(../images/bigicons.png) no-repeat -195px 5px;	
+}
+
+i.icon-product3{
+	background: url(../images/bigicons.png) no-repeat -295px 5px;	
+}
+
+.head span.icon-logo{
+	background: url(../images/bigicons.png) no-repeat 2px 0;
+}

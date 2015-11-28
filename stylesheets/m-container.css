@@ -1,0 +1,44 @@
+/* products */
+.products{
+	height: 300px;
+	padding: 60px 0;
+}
+
+li.product{
+	float: left;
+	width:33.333%;
+}
+
+
+.product-intr{
+	margin-left: 110px;
+	min-height: 180px;
+	width: 240px;
+}
+
+.product-intr h5{
+	margin-bottom: 20px;
+	font-family: "Microsoft Yahei";	
+	font-size: 22px;
+	color: #333333; 
+}
+
+.product-intr p{
+	margin-bottom: 30px;
+	font-family: "Microsoft Yahei";
+	font-size: 14px;
+	color: #666666;
+	line-height: 25px;
+}
+
+.product-intr a{
+	font-family: "Microsoft Yahei";
+	font-size: 14px;	
+	color: #39a030;
+}
+/* 这里宽度不够，1616px，屏幕只有1440px。元素间有个默认的间距。 */
+.office img{
+	width: 19.76%;
+	margin: 0;
+	padding: 0;
+}
