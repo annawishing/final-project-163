@@ -1,0 +1,81 @@
+.mask, .m-login{
+	display: none;
+}	
+
+.mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1040;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	background: #000;
+}
+
+.m-login{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1050;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+/* 这里水平、垂直居中如何实现 */
+.m-login form.login{
+	position: absolute;
+	left: 50%;
+	margin: 0;
+	width: 390px;
+	height: 290px;
+	margin-top: 200px;
+	margin-left: -195px;
+	background-color: #fff;
+}
+
+.m-login form p{
+	margin: 25px 0 20px 50px;
+	text-align: left;
+}
+
+.m-login span.icon-close{
+	position: absolute;
+	top: 8px;
+	right: 2px;
+}
+
+.m-login form p.title{
+	font-size: 18px;
+	font-family: "Microsoft Yahei";		
+}
+
+.m-login input{
+	margin-bottom: 15px;
+	width: 290px;
+	height: 40px;
+	background: #fafafa;
+	font-size: 16px;
+	font-family: "Microsoft Yahei";			
+}
+
+.password input{
+	margin-bottom: 30px;
+}
+
+button.login{
+	width: 290px;
+	height: 45px;
+	background: #1ca63d;
+	color: #fff;
+	font-size: 16px;
+	font-family: "Microsoft Yahei";		
+}
+
+
+

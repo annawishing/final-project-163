@@ -9,14 +9,14 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/slider.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/m-container.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/footer.css">
-
+	<link rel="stylesheet" type="text/css" href="stylesheets/login.css">	
 
 </head>
 <body>
-	<div class="notice">
+	<div id="notice" class="notice">
 		<div class="notice-content container">网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势！
 		<a href="http://study.163.com/">立即查看></a>
-		<div class="close"><span class="icon-close"></span><span>不再提醒</span></div>
+		<div id="notice-close" class="close"><span class="icon-close"></span><span>不再提醒</span></div>
 		</div>
 	</div>
 
@@ -110,12 +110,12 @@
 							<div class="tab-panel">
 								<img src="">
 								<p>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</p>
-								<div>音频帮</div>
+								<div class="channel">音频帮</div>
 								<div>
 									<i class="icon-listener"></i>
 									510
 								</div>
-								<div>￥800.00</div>
+								<div class="price">￥800.00</div>
 							</div>
 
 							<div class="tab-panel">
@@ -148,7 +148,7 @@
 									<i class="icon-listener"></i>
 									510
 								</div>
-								<div>￥800.00</div>
+								<div class="price">￥800.00</div>
 							</div>														
 
 						</div>
@@ -192,28 +192,55 @@
 		</div>
 
 	</div>
+
 	<div class="footer">
-		<div class="copyright">
-			<p>网易教育产品部</p><span class="icon-close">
-			<p>©2014 icourse163.org 浙ICP备08114786号-1
-				icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</p>
-		</div>
-		<ul>友情链接：
-			<li>网易公开课</li>
-			<li>网易云课堂</li>
-			<li>中国大学MOOC</li>
-		</ul>
-		<ul>我们：
-			<li>关于</li>
-			<li>联系</li>
-			<li>关注
-				<i class="icon-weibo"></i>
-			</li>
-		</ul>
-		<ul>更多：
-			<li>常见问题</li>
-			<li>意见反馈</li>
-		</ul>
+			<div class="container clearfix">	
+				<div class="copyright">
+					<span class="icon-logo"></span>
+					<p class="item">| 网易教育产品部</p>
+					<p class="cr-content">©2014 icourse163.org 浙ICP备08114786号-1<br>
+						icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</p>
+				</div>
+				<ul class="f-links">
+					<li class="title">友情链接：</li>								
+					<li>网易公开课</li>
+					<li>网易云课堂</li>
+					<li>中国大学MOOC</li>
+				</ul>
+				<ul class="about-us">
+					<li class="title">我们：</li>
+					<li>关于</li>
+					<li>联系</li>
+					<li>关注
+						<i class="icon-weibo"></i>
+					</li>
+				</ul>
+				<ul class="more">
+					<li class="title">更多：</li>				
+					<li>常见问题</li>
+					<li>意见反馈</li>
+				</ul>
+			</div>	
 	</div>
+
+	
+	<div class="m-login">
+		<form class="login" action="/login" method="post">
+			<span class="icon-close"></span>		
+			<p class="title">登录网易云课堂</p>
+			<div class="account">
+				<input type="text" name="accout" placeholder="账号"></input>
+			</div>
+			<div class="password">
+				<input type="text" name="password" placeholder="密码"></input>
+			</div>
+			<button class="login">登录</button>
+		</form>
+	</div>
+	<div class="mask"></div>
+</div>
+
+<script type="text/javascript" src="javascripts/notice.js"></script>
+
 </body>
 </html>

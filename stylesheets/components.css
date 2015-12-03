@@ -4,6 +4,7 @@
 }
 
 span.icon-close{
+	display: inline-block;
 	background: url(../images/smallicons.png) no-repeat;
 	width: 9px;
 	height: 9px;
@@ -30,8 +31,16 @@ i.icon-product3{
 	background: url(../images/bigicons.png) no-repeat -295px 5px;	
 }
 
-.head span.icon-logo{
-	background: url(../images/bigicons.png) no-repeat 2px 0;
+span.icon-logo{
+	background: url(../images/bigicons.png) no-repeat;
+}
+
+span.icon-logo{
+	display: inline-block;
+	width: 65px;
+	height: 22px;
+	position: relative;
+	top: 4px;
 }
 
 .clearfix:after{
@@ -51,11 +60,24 @@ i.icon-product3{
 .tab-panel{
 	float: left;
 	width: 25%;
+	margin-right: 0px;
+	line-height: 2;
+	font-size: 12px;
+	background-color: #fff;
+	box-shadow: 0 1px 2px 2px #ecebeb;
 }
+
+/* tab-panel组件 */
+.tab-panel .channel{
+	color: #999999;
+}
+.tab-panel .price{
+	color: #ff3f00;
+}
+
 .panel{
 	background-color: #fff;
 	box-shadow: 0 1px 2px 2px #ecebeb;
-
 	padding: 15px 0 20px;
 }
 

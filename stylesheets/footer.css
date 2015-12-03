@@ -1,4 +1,47 @@
 .footer{
+	padding: 80px 0;
 	background: #2c3339;
 	color: white;
+}
+
+.copyright, .footer ul{
+	float: left;
+	font-family: "Microsoft Yahei";	
+	font-size: 14.58px;	
+	line-height: 1.5;
+}
+
+
+.footer li.title{
+	font-size: 12.5px;
+}
+
+span.icon-logo{
+	display: inline-block;
+	width: 65px;
+	height: 22px;
+}
+
+.copyright .item{
+	display: inline-block;
+	color: #39a030;
+	font-size: 22px;
+}
+.copyright{
+	padding: 10px 145px 0 45px;
+	width: 400px; 
+}
+
+.copyright p.cr-content{
+	font-size: 12.5px;
+	color: #ffffff;
+}
+
+.f-links{
+	padding-right: 95px;
+}
+
+
+.about-us{
+	padding-right: 65px;
 }

@@ -17,4 +17,5 @@
 
 .notice .close{
 	float: right;
+	cursor: pointer;
 }
