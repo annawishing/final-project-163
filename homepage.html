@@ -106,51 +106,22 @@
 							<li class="active">产品设计</li>
 							<li>编程语言</li>
 						</ul>
-						<div class="tab-content">
-							<div class="tab-panel">
-								<img src="">
-								<p>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</p>
-								<div class="channel">音频帮</div>
-								<div>
-									<i class="icon-listener"></i>
-									510
+						<div id="tabcoures" class="tab-content clearfix">
+							<div class="column">
+								<div class="tab-panel">
+									<img src="images/course.jpg">
+									<div class="tab-panel-content">
+										<p>混音全揭秘 舞曲实战篇 揭秘音乐揭秘揭秘音乐揭秘...</p>
+										<div class="channel">音频帮</div>
+										<div class="learner">
+											<span class="icon-listener"></span>
+											510
+										</div>
+										<div class="price">￥800.00</div>
+									</div>
 								</div>
-								<div class="price">￥800.00</div>
-							</div>
-
-							<div class="tab-panel">
-								<img src="">
-								<p>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</p>
-								<div>音频帮</div>
-								<div>
-									<i class="icon-listener"></i>
-									510
-								</div>
-								<div>￥800.00</div>
-							</div>
-
-							<div class="tab-panel">
-								<img src="">
-								<p>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</p>
-								<div>音频帮</div>
-								<div>
-									<i class="icon-listener"></i>
-									510
-								</div>
-								<div>￥800.00</div>
-							</div>
-
-							<div class="tab-panel">
-								<img src="">
-								<p>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</p>
-								<div>音频帮</div>
-								<div>
-									<i class="icon-listener"></i>
-									510
-								</div>
-								<div class="price">￥800.00</div>
-							</div>														
-
+							</div>						
+																					
 						</div>
 					</div>
 				</div>	
@@ -160,30 +131,16 @@
 						<div class="panel-heading">机构介绍</div>
 						<div class="panel-body">
 							观看下面的视频来了解吧：
-							<img src="">
+							<div id="agencyphoto">
+								<img src="images/agency.jpg">
+							</div>	
 						</div>
 					</div>
 					<div class="panel hot">
 						<div class="panel-heading">最热排行</div>
-						<div class="panel-body">
-							<div class="item">
-								<div class="item-photo">
-									<img src="">
-								</div>
-
-								<div class="item-name">舞曲揭秘音乐揭秘...</div>
-								<div><i class="icon-listener"></i>21567</div>
-							</div>	
-
-							<div class="item">
-								<div class="item-photo">
-									<img src="">
-								</div>
-
-								<div class="item-name">舞曲揭秘音乐揭秘...</div>
-								<div><i class="icon-listener"></i>21567</div>
-							</div>	
-
+						<div class="panel-body" style="overflow: hidden; height: 700px; margin-bottom: -20px;">
+							<div id="hot-panel-body">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -224,8 +181,8 @@
 	</div>
 
 	
-	<div class="m-login">
-		<form class="login" action="/login" method="post">
+	<div class="m-login modal">
+		<form class="login modal-dialog" action="/login" method="post">
 			<span class="icon-close"></span>		
 			<p class="title">登录网易云课堂</p>
 			<div class="account">
@@ -237,10 +194,26 @@
 			<button class="login">登录</button>
 		</form>
 	</div>
-	<div class="mask"></div>
-</div>
+	<div id="mask" class="mask"></div>
+	<div id="m-video" class="m-video modal">
+		<div class="video modal-dialog">
+			<span id="icon-close" class="icon-close"></span>
+			<p class="title">请观看下面的视频</p>
+			<video controls="controls" poster="images/agencyopen.jpg">
+				<source src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4" type="video/mp4">
+				您的浏览器不支持video标签。
+			</video>
+		</div>	
+	</div>
 
+</div>
+<script type="text/javascript" src="javascripts/utils.js"></script>
 <script type="text/javascript" src="javascripts/notice.js"></script>
+<script type="text/javascript" src="javascripts/tab-content.js"></script>
+<script type="text/javascript" src="javascripts/hot.js"></script>
+<script type="text/javascript" src="javascripts/agency.js"></script>
+
+
 
 </body>
 </html>

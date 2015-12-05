@@ -61,7 +61,38 @@ li.product{
 }
 
 .left-fix .left{
-	margin-right: 240px;
+	margin-right: 220px;
+}
+
+.tab-panel .tab-panel-content{
+	padding: 5px;
+}
+.tab-panel img{
+	width: 100%;
+	height: 120px;
+}
+.tab-panel p{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.tab-panel .channel{
+	color: #999;
+}
+.tab-panel .learner{
+	display: inline-block;
+	line-height: 1.5;
+	padding:0 2px;
+	font-size: 9px;
+	color: #ccc;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+.tab-panel span.icon-listener{
+	margin-right: 0px;
+}
+.tab-panel .price{
+	color: #ff3f00;
 }
 
 .m-content .right{
@@ -83,7 +114,74 @@ li.product{
 	line-height: 48px;
 }
 
+.agency .panel-body{
+	font-size: 14px;
+	color: #666;
+}
+
+.agency img{
+	width: 180px;
+	height: 110px;
+	margin-top:10px; 
+	cursor: pointer;
+
+}
+
+.hot .item{
+	margin-bottom: 20px;
+	height: 50px;
+}
+
+.hot img{
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+
+.hot .item-content{
+	margin-left: 60px;
+}
+
+.hot .listener{
+	margin-left: 2px;
+}
+
+.hot .item-name{
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 12px;
+    font-size: 14px;
+
+}
+
+.hot  span.li-num{
+	font-size: 8px;
+	color: #999999;
+}
 /* right */
 .agency{
 	margin-bottom: 20px;
+}
+
+.video{
+	width: 950px;
+	height: 675px;
+}
+
+.m-video span.icon-close{
+	cursor: pointer;
+}
+
+.m-video p{
+	margin: 27px 30px 20px 30px;
+	text-align: left;
+	font-size: 18px;
+	color: #444;
+
+}
+
+.m-video video {
+	width: 890px;
+	height: 566px;
 }

@@ -44,13 +44,13 @@ a.logo{
 	background: url(../images/smallicons.png) no-repeat -20px 0;
 	position: absolute;
 	left: 8px;
-	top: 5px;
+	top: 6px;
 }
 
 .follow-btn span.content{
 	position: absolute;
 	right: 8px;
-	top: 5px;
+	top: 2px;
 	vertical-align: middle;
 }
 
