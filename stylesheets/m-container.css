@@ -11,7 +11,6 @@ li.product{
 
 .product-intr{
 	margin-left: 110px;
-	width: 240px;
 }
 
 .product-intr h5{
@@ -35,8 +34,20 @@ li.product{
 	color: #39a030;
 }
 
-.office{
+.office-wrap{
 	width: 100%;
+	height: 220px;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.office{
+	width: 1625px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -812.5px;
 }
 
 .office .item{
@@ -48,12 +59,12 @@ li.product{
 	width: 100%;
 }
 
-
 .m-content{
 	padding: 80px 0 120px;
 	background-color: #f8f8f8;
 }
 
+/* left */
  .left-fix{
 	float: left;
 	width: 100%;
@@ -95,6 +106,7 @@ li.product{
 	color: #ff3f00;
 }
 
+/* right */
 .m-content .right{
 	float: right;
 	width: 220px;

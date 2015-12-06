@@ -2,9 +2,26 @@ body {
 	font-family: "Microsoft Yahei"
 }
 
-.container{
-	width: 1205px;
-	margin: auto;
+@media screen and (max-width: 1205px){
+	.container{
+		width: 900px;
+		margin: auto;
+	}
+
+	.tab-content .column{
+		width: 33.3333%;
+	}
+}
+
+@media screen and (min-width: 1205px){
+	.container{
+		width: 1205px;
+		margin: auto;
+	}
+
+	.tab-content .column{
+		width: 25%;
+	}
 }
 
 span.icon-close{
@@ -69,7 +86,7 @@ span.icon-logo{
 
 .column{
 	float: left;
-	width: 25%;
+/*	width: 25%;*/
 	padding-right: 18px;
 	padding-bottom: 20px;
 	box-sizing:border-box;
