@@ -1,6 +1,22 @@
 
 getData("http://study.163.com/webDev/couresByCategory.htm?pageNo=1&psize=20&type=10",renderTabPanels);
 
+
+var tabProgram = document.getElementById("programming");
+tabProgram.addEventListener("click", function(){
+	getData("http://study.163.com/webDev/couresByCategory.htm?pageNo=1&psize=20&type=20",renderTabPanels);
+	tabProgram.className += " active";
+	tabProducts.className -= " active";
+},false);
+
+var tabProducts = document.getElementById("products");
+tabProducts.addEventListener("click", function(){
+	getData("http://study.163.com/webDev/couresByCategory.htm?pageNo=1&psize=20&type=10",renderTabPanels);
+	tabProducts.className += " active";
+	tabProgram.className -= " active";
+},false);
+
+
 function renderTabPanels (panels) {
 	console.log(panels);
 	var tabcourse = document.getElementById("tabcoures");

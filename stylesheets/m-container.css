@@ -112,7 +112,21 @@ li.product{
 	text-align: center;
 	vertical-align: middle;
 	line-height: 48px;
+	cursor: pointer;
 }
+
+
+li#products:hover{
+	background: #21a557;
+	color: white;
+	opacity: 0.5;	
+}
+li#programming:hover{
+	background: #21a557;
+	color: white;
+	opacity: 0.5;		
+}
+
 
 .agency .panel-body{
 	font-size: 14px;
