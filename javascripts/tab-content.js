@@ -24,7 +24,7 @@ function renderTabPanels (panels) {
 	var list = panels.list;	
 	for (var i = 0; i <= list.length-1; i++) {
 		var course = list[i]; 
-		var itemHtml = 		['<div class="column">',
+		var itemHtml = 		['<div id="column" class="column">',
 								'<div class="tab-panel">' ,
 									'<img src="' + course.middlePhotoUrl +'">',
 									'<div class="tab-panel-content">',
@@ -34,7 +34,7 @@ function renderTabPanels (panels) {
 											'<span class="icon-listener"></span>',
 											course.learnerCount,
 										'</div>',
-										'<div class="price">￥ ' + course.price +'</div>',
+										'<div class="price">' + ( course.price == 0 ? "免费" : '￥ ' + course.price.toFixed(2) )  +'</div>',
 									'</div>',
 								'</div>',
 							'</div>'
@@ -44,6 +44,19 @@ function renderTabPanels (panels) {
 	};
 
 	tabcourse.innerHTML = sum;
+
+
 }
 
 
+// 	var tabcolumn = document.getElementById("column");
+// 	tabcolumn.addEventListener("mouseover",function(){
+
+// 	},false);
+
+
+
+
+// function mouseleave(){
+// //取消mouseover事件的效果
+// }

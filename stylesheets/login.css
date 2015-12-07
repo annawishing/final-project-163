@@ -1,17 +1,17 @@
 /* 这里水平、垂直居中如何实现 */
 
 
-.m-login form.login{
+.m-login .login{
 	width: 390px;
 	height: 290px;
 }
 
-.m-login form p{
+.m-login p{
 	margin: 25px 0 20px 50px;
 	text-align: left;
 }
 
-.m-login form p.title{
+.m-login p.title{
 	font-size: 18px;
 	font-family: "Microsoft Yahei";		
 }
@@ -29,7 +29,7 @@
 	margin-bottom: 30px;
 }
 
-button.login{
+button.login-btn{
 	width: 290px;
 	height: 45px;
 	background: #1ca63d;

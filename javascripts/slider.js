@@ -1,9 +1,10 @@
-	var intervalID = setInterval(slide,5000);
+	var intervalID = setInterval(slide,2000);
 
+	var pause = false;
 	var list = document.querySelectorAll(".slider ul li");
 	var cur = 0;
 	function slide(){
-
+		if( pause != true){
 		var next ;
 
 		list[cur].style.opacity = 0;
@@ -18,6 +19,21 @@
 		}
 
 		list[next].style.opacity = 1;
+
+
+		}
 		
-		
+	}
+
+	var ulSlider = document.getElementById("slider")
+
+	ulSlider.addEventListener("mouseover",pauseSlide,false);
+	ulSlider.addEventListener("mouseleave",go_on,false);
+	function pauseSlide(){
+		pause = true;
+	}
+
+	function go_on(){
+		pause = false;
+
 	}

@@ -3,7 +3,6 @@ var agencyElem = document.getElementById("agencyphoto");
 
 var iconCloseElem = document.getElementById("icon-close");
 var agencyVideo = document.getElementById("m-video");
-var mask = document.getElementById("mask");
 
 agencyElem.addEventListener("click", playVideo, false);
 iconCloseElem.addEventListener("click", closeVideo, false);
@@ -18,10 +17,10 @@ iconCloseElem.addEventListener("click", closeVideo, false);
 
 function playVideo () {
 	agencyVideo.style.display = "block";
-	mask.style.display = "block";
+	mask(true);
 }
 
 function closeVideo(){
 	agencyVideo.style.display = "none";		
-	mask.style.display = "none";
+	mask(false);
 }

@@ -28,10 +28,17 @@
 			</a>
 
 			<span class="follow">
-				<a class="follow-btn">
+				<a id="follow-btn" class="follow-btn">
 					<span class="icon-add"></span>
 					<span class="content">关注</span>
 				</a>
+				<div id="followed">
+					<span class="icon-suc"></span>
+					<span class="content">
+						<span>已关注</span>
+						<span class="cancel">| 取消</span>
+					</span>
+				</div>
 				<span class="m-fans">			
 					<span class="fans">粉丝</span>
 					<span class="fans-num">45</span>
@@ -47,7 +54,7 @@
 		</div>
 	</div>
 	<div class="slider">
-		<ul>
+		<ul id="slider">
 			<li style="opacity:1">
 				<a href="http://open.163.com/" target="blank"><img src="images/banner1.jpg"></a>
 			</li>
@@ -185,18 +192,19 @@
 	</div>
 
 	
-	<div class="m-login modal">
-		<form class="login modal-dialog" action="/login" method="post">
+	<div id="m-login" class="m-login modal">
+		<div class="login modal-dialog">
 			<span class="icon-close"></span>		
 			<p class="title">登录网易云课堂</p>
 			<div class="account">
-				<input type="text" name="accout" placeholder="账号"></input>
+				<input id="inputAccount" type="text" name="accout" placeholder="账号"></input>
 			</div>
 			<div class="password">
-				<input type="text" name="password" placeholder="密码"></input>
+				<input id="inputPassword" type="text" name="password" placeholder="密码"></input>
 			</div>
-			<button class="login">登录</button>
-		</form>
+			<button id="loginBtn" class="login-btn">登录</button>
+			<div id="loginFal" style="color:red;"></div>
+		</div>
 	</div>
 	<div id="mask" class="mask"></div>
 	<div id="m-video" class="m-video modal">
@@ -213,6 +221,7 @@
 </div>
 <script type="text/javascript" src="javascripts/utils.js"></script>
 <script type="text/javascript" src="javascripts/notice.js"></script>
+<script type="text/javascript" src="javascripts/login.js"></script>
 <script type="text/javascript" src="javascripts/slider.js"></script>
 <script type="text/javascript" src="javascripts/tab-content.js"></script>
 <script type="text/javascript" src="javascripts/hot.js"></script>
