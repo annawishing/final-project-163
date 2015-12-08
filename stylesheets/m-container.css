@@ -75,8 +75,14 @@ li.product{
 	margin-right: 220px;
 }
 
+.tab-panel{
+	cursor: pointer;
+}
+
 .tab-panel .tab-panel-content{
 	padding: 5px;
+	height: 90px;
+	overflow: hidden;
 }
 .tab-panel img{
 	width: 100%;
@@ -105,6 +111,70 @@ li.product{
 .tab-panel .price{
 	color: #ff3f00;
 }
+
+.tab-float{
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	width: 480px;
+	box-shadow: 0 0 2px 2px #ccc;
+	display: none;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.tab-float .tab-float-content{
+	padding: 10px 10px 20px;
+	background-color: #fff;
+}
+
+.tab-float .tab-float-content .image{
+	float: left;
+	width: 228px;
+	height: 120px;
+}
+
+.tab-float .tab-float-content .info{
+	float: left;
+	margin-left: 20px;
+	width: 210px;
+}
+
+.tab-float .tab-float-content .info .title{
+	font-size: 18px;
+	color: #333;
+	margin-bottom: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.tab-float .tab-float-content .info .learn{
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 10px;
+}
+
+.tab-float .tab-float-content .info .publisher{
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 2px;
+}
+
+.tab-float .tab-float-content .info .category{
+	font-size: 12px;
+	color: #666;
+}
+
+.tab-float .tab-float-footer{
+	padding: 20px;
+	font-size: 14px;
+	color: #666;
+	background-color: #f8f8f8;
+	overflow: hidden;
+}
+
+
 
 /* right */
 .m-content .right{

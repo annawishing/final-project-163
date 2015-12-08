@@ -16,16 +16,28 @@ tabProducts.addEventListener("click", function(){
 	tabProgram.className -= " active";
 },false);
 
+var tabcourse = document.getElementById("tabcoures");
+
+function showFloat(t){
+	t.parentNode.getElementsByClassName('tab-float')[0].style.display = "block";
+}
+	
+
+
+function hideFloat(t){
+	t.parentNode.getElementsByClassName('tab-float')[0].style.display = "none";
+}
+
+
 
 function renderTabPanels (panels) {
 	console.log(panels);
-	var tabcourse = document.getElementById("tabcoures");
 	var sum ="";
 	var list = panels.list;	
 	for (var i = 0; i <= list.length-1; i++) {
 		var course = list[i]; 
 		var itemHtml = 		['<div id="column" class="column">',
-								'<div class="tab-panel">' ,
+								'<div class="tab-panel" onmouseover="showFloat(this)" >' ,
 									'<img src="' + course.middlePhotoUrl +'">',
 									'<div class="tab-panel-content">',
 										'<p>' + course.name +'</p>',
@@ -36,6 +48,25 @@ function renderTabPanels (panels) {
 										'</div>',
 										'<div class="price">' + ( course.price == 0 ? "免费" : '￥ ' + course.price.toFixed(2) )  +'</div>',
 									'</div>',
+								'</div>',
+								'<div class="tab-float" onmouseleave="hideFloat(this)">',
+									'<div class="tab-float-content clearfix">',
+										'<div class="image">',
+											'<img src="'+ course.middlePhotoUrl +'" width="228px" height="120px">',
+										'</div>	',
+										'<div class="info">',
+											'<h5 class="title">'+ course.name +'</h5>',
+											'<div class="learn">',
+												'<span class="icon-listener"></span>',
+												course.learnerCount + '人在学',
+											'</div>',
+											'<div class="publisher"> 发布者： '+ course.provider +'</div>',
+											'<div class="category">分类： '+ course.categoryName +'</div>',
+										'</div>',
+									'</div>',
+									'<p class="tab-float-footer">',
+										course.description,
+									'</p>',
 								'</div>',
 							'</div>'
 							].join('');
