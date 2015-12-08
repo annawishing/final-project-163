@@ -38,6 +38,13 @@ span.icon-close{
 	right: 2px;
 }
 
+span.icon-suc{
+	display: inline-block;
+	background: url(../images/smallicons.png) no-repeat -70px 4px;
+	width: 13px;
+	height: 13px;
+}
+
 i.icon-product{
 	display: inline-block;
 	float: left;

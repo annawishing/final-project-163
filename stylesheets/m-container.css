@@ -6,6 +6,8 @@
 li.product{
 	float: left;
 	width: 33.333%;
+	padding-right: 40px;
+	box-sizing:border-box;
 }
 
 
@@ -34,6 +36,11 @@ li.product{
 	color: #39a030;
 }
 
+.product-intr a:hover{
+	text-decoration: underline;
+}
+
+/* office */
 .office-wrap{
 	width: 100%;
 	height: 220px;
@@ -75,6 +82,34 @@ li.product{
 	margin-right: 220px;
 }
 
+/* nav-tabs */
+.nav-tabs{
+	margin-bottom: 30px;
+}
+.nav-tabs li{
+	float: left;
+	width: 200px;
+	height: 48px;
+	background: #fff;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 48px;
+	cursor: pointer;
+}
+
+
+li#products:hover{
+	background: #21a557;
+	color: white;
+	opacity: 0.5;	
+}
+li#programming:hover{
+	background: #21a557;
+	color: white;
+	opacity: 0.5;		
+}
+
+/*  tab-panel */
 .tab-panel{
 	cursor: pointer;
 }
@@ -112,6 +147,7 @@ li.product{
 	color: #ff3f00;
 }
 
+/* tab-float */
 .tab-float{
 	position: absolute;
 	top: -10px;
@@ -182,33 +218,10 @@ li.product{
 	width: 220px;
 }
 
-/* left */
-.nav-tabs{
-	margin-bottom: 30px;
+/* agency */
+.agency{
+	margin-bottom: 20px;
 }
-.nav-tabs li{
-	float: left;
-	width: 200px;
-	height: 48px;
-	background: #fff;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 48px;
-	cursor: pointer;
-}
-
-
-li#products:hover{
-	background: #21a557;
-	color: white;
-	opacity: 0.5;	
-}
-li#programming:hover{
-	background: #21a557;
-	color: white;
-	opacity: 0.5;		
-}
-
 
 .agency .panel-body{
 	font-size: 14px;
@@ -223,6 +236,29 @@ li#programming:hover{
 
 }
 
+.video{
+	width: 950px;
+	height: 675px;
+}
+
+.m-video span.icon-close{
+	cursor: pointer;
+}
+
+.m-video p{
+	margin: 27px 30px 20px 30px;
+	text-align: left;
+	font-size: 18px;
+	color: #444;
+
+}
+
+.m-video video {
+	width: 890px;
+	height: 566px;
+}
+
+/* hot */
 .hot .item{
 	margin-bottom: 20px;
 	height: 50px;
@@ -255,29 +291,4 @@ li#programming:hover{
 	font-size: 8px;
 	color: #999999;
 }
-/* right */
-.agency{
-	margin-bottom: 20px;
-}
 
-.video{
-	width: 950px;
-	height: 675px;
-}
-
-.m-video span.icon-close{
-	cursor: pointer;
-}
-
-.m-video p{
-	margin: 27px 30px 20px 30px;
-	text-align: left;
-	font-size: 18px;
-	color: #444;
-
-}
-
-.m-video video {
-	width: 890px;
-	height: 566px;
-}

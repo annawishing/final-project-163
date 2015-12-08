@@ -21,7 +21,7 @@ a.logo{
 
 /* follow */
 .follow{
-
+	padding-top: 38px;
 }
 .follow-btn{
 	display: inline-block;
@@ -35,6 +35,10 @@ a.logo{
 	vertical-align: middle;
 	border: 1px solid #21a557;
 	border-radius: 2px;
+}
+
+.follow-btn:hover{
+	background-color: #2fb556;
 }
 
 .follow-btn span.icon-add{
@@ -57,7 +61,7 @@ a.logo{
 #followed{
 	display: inline-block;
 	position: relative;
-	width: 130px;
+	width: 100px;
 	height: 22px;
 	margin-right: 10px;
 	background-color: #f8f8f8;
@@ -66,6 +70,14 @@ a.logo{
 	border: 1px solid #efefef;
 	border-radius: 1px;	
 }
+
+#followed span.icon-suc{
+	padding-left: 5px;
+}
+
+#followed .content{
+	margin-bottom: 5px;
+}
 #followed .cancel{
 	color: #999;
 }
@@ -73,10 +85,15 @@ a.logo{
 #followed{
 	display: none;
 }
+
+
+
 .m-fans{
 	font-size: 12px;
 	color: #666666;
 }
+
+/*  nav */
 .head div.nav{
 	float: right;
 }
@@ -97,6 +114,10 @@ a.logo{
 .nav a{
 	font-size: 16px;
 	color: #666666;
+}
+
+.head .nav a:hover{
+	color: #39a030;
 }
 
 .nav span.icon-search{

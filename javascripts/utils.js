@@ -35,7 +35,6 @@ function getCookie(){
 	};
 	return cookie;
 
-	//return all.indexOf(name) != -1;
 }
 
 function setCookie(name,value){
